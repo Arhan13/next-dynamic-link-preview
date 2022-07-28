@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 
-const Home = ({ photo }) => {
+const OneComponent = ({ photo }) => {
   return (
     <div>
       <Head>
@@ -21,7 +21,7 @@ const Home = ({ photo }) => {
     </div>
   );
 };
-export default Home;
+export default OneComponent;
 
 export const getServerSideProps = async () => {
   let photo = null;

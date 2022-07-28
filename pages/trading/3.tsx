@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 
-const Home = ({ photo }) => {
+const ThreeComponent = ({ photo }) => {
   return (
     <div>
       <Head>
@@ -21,11 +21,11 @@ const Home = ({ photo }) => {
     </div>
   );
 };
-export default Home;
+export default ThreeComponent;
 
 export const getServerSideProps = async () => {
   let photo = null;
-  await fetch("https://jsonplaceholder.typicode.com/photos/1")
+  await fetch("https://jsonplaceholder.typicode.com/photos/3")
     .then((response) => response.json())
     .then((json) => {
       photo = json;
